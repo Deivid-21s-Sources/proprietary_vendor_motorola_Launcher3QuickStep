@@ -18,6 +18,7 @@ android_app_import {
 		"com.motorola.motosignature",
 	],
 	system_ext_specific: true,
+	overrides: ["Launcher3", "Trebuchet", "NexusLauncherRelease"],
 }
 
 android_app_import {

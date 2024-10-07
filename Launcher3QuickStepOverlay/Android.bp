@@ -7,5 +7,6 @@ runtime_resource_overlay {
 	resource_dirs: [
 		"res",
 	],
+	overrides: ["PixelLauncherCustomOverlay"],
 }
 
