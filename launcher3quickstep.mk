@@ -33,8 +33,8 @@ PRODUCT_PACKAGES += \
     libobjectbox-jni \
     libsqlite3ext \
     libsqlite3x \
-    Launcher3QuickStep \
-    Launcher3QuickStepOverlay
+    MotoLauncher3QuickStep \
+    MotoLauncher3QuickStepOverlay
 
 # Moto Leanback Launcher
 # Version: 34.00.0.10.0

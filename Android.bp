@@ -1,7 +1,7 @@
 android_app_import {
-	name: "Launcher3QuickStep",
+	name: "MotoLauncher3QuickStep",
 	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk",
+	apk: "proprietary/system_ext/priv-app/MotoLauncher3QuickStep/MotoLauncher3QuickStep.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -17,7 +17,7 @@ android_app_import {
 		"com.motorola.motosignature",
 	],
 	system_ext_specific: true,
-	overrides: ["Launcher3", "Trebuchet", "NexusLauncherRelease"],
+	overrides: ["Launcher3", "Launcher3QuickStep", "Trebuchet", "NexusLauncherRelease"],
 }
 
 android_app_import {
@@ -57,7 +57,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/priv-app/Launcher3QuickStep/lib/arm64/libobjectbox-jni.so"],
+			srcs: ["proprietary/system_ext/priv-app/MotoLauncher3QuickStep/lib/arm64/libobjectbox-jni.so"],
 			shared_libs: [
 				"libc",
 				"liblog",
@@ -79,7 +79,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/priv-app/Launcher3QuickStep/lib/arm64/libsqlite3ext.so"],
+			srcs: ["proprietary/system_ext/priv-app/MotoLauncher3QuickStep/lib/arm64/libsqlite3ext.so"],
 			shared_libs: [
 				"libm",
 				"libdl",
@@ -100,7 +100,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/priv-app/Launcher3QuickStep/lib/arm64/libsqlite3x.so"],
+			srcs: ["proprietary/system_ext/priv-app/MotoLauncher3QuickStep/lib/arm64/libsqlite3x.so"],
 			shared_libs: [
 				"libdl",
 				"liblog",

@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-	name: "Launcher3QuickStepOverlay",
-	theme: "Launcher3QuickStepOverlay",
+	name: "MotoLauncher3QuickStepOverlay",
+	theme: "MotoLauncher3QuickStepOverlay",
 	certificate: "platform",
 	sdk_version: "current",
 	product_specific: true,
