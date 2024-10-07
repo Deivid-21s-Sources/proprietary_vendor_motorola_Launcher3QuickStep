@@ -2,8 +2,7 @@ android_app_import {
 	name: "Launcher3QuickStep",
 	owner: "motorola",
 	apk: "proprietary/system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk",
-	preprocessed: true,
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -37,8 +36,7 @@ android_app_import {
 	name: "MotoLeanbackLauncher",
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/MotoLeanbackLauncher/MotoLeanbackLauncher.apk",
-	preprocessed: true,
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
