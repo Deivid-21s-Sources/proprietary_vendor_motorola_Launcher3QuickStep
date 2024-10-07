@@ -1,0 +1,116 @@
+android_app_import {
+	name: "Launcher3QuickStep",
+	owner: "motorola",
+	apk: "proprietary/system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	required: [
+		"libobjectbox-jni",
+		"libsqlite3ext",
+		"libsqlite3x",
+		"moto-checkin",
+		"moto-core_services",
+		"moto-settings",
+		"com.motorola.motosignature",
+	],
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "LauncherConfig",
+	owner: "motorola",
+	apk: "proprietary/product/app/LauncherConfig/LauncherConfig.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MotoLeanbackLauncher",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/MotoLeanbackLauncher/MotoLeanbackLauncher.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	required: [
+		"moto-core_services",
+		"moto-settings",
+		"moto-checkin",
+	],
+	product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libobjectbox-jni",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/priv-app/Launcher3QuickStep/lib/arm64/libobjectbox-jni.so"],
+			shared_libs: [
+				"libc",
+				"liblog",
+				"libm",
+				"libdl",
+			],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsqlite3ext",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/priv-app/Launcher3QuickStep/lib/arm64/libsqlite3ext.so"],
+			shared_libs: [
+				"libm",
+				"libdl",
+				"libc",
+			],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsqlite3x",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/priv-app/Launcher3QuickStep/lib/arm64/libsqlite3x.so"],
+			shared_libs: [
+				"libdl",
+				"liblog",
+				"libm",
+				"libc",
+			],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	system_ext_specific: true,
+}

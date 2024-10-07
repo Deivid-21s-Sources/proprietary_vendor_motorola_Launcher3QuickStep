@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Moto App Launcher Overlay</string>
+    <string name="config_defaultDndAccessPackages">com.google.android.gms:com.google.android.apps.wellbeing:com.motorola.camera2:com.motorola.camera3:com.motorola.leanbacklauncher:com.motorola.gamemode:com.motorola.demo:com.motorola.actions:com.motorola.cn.smartscene</string>
+    <string name="config_defaultListenerAccessPackages">com.motorola.motodisplay:com.motorola.motolights:com.motorola.launcher3:com.motorola.launcher.secondarydisplay:com.android.launcher3:com.google.android.projection.gearhead:com.motorola.mobiledesktop:com.motorola.motolights.rearlights:com.motorola.uxcore</string>
+    <string name="config_mainDisplayShape">M20 0C10.7 0 0 10.7 0 24v0h24V0z</string>
+    <string name="config_recentsComponentName">com.motorola.launcher3/com.android.quickstep.RecentsActivity</string>
+    <string name="config_secondaryHomePackage">com.motorola.launcher3</string>
+    <string name="config_defaultAppPredictionService">com.motorola.launcher3/com.android.launcher3.appprediction.AppPredictionServiceImpl</string>
+</resources>

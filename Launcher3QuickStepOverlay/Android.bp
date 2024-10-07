@@ -1,0 +1,11 @@
+runtime_resource_overlay {
+	name: "Launcher3QuickStepOverlay",
+	theme: "Launcher3QuickStepOverlay",
+	certificate: "platform",
+	sdk_version: "current",
+	product_specific: true,
+	resource_dirs: [
+		"res",
+	],
+}
+
