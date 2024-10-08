@@ -7,4 +7,8 @@
     <string name="config_recentsComponentName">com.motorola.launcher3/com.android.quickstep.RecentsActivity</string>
     <string name="config_secondaryHomePackage">com.motorola.launcher3</string>
     <string name="config_defaultAppPredictionService">com.motorola.launcher3/com.android.launcher3.appprediction.AppPredictionServiceImpl</string>
+    <string name="config_secondaryHomeComponent">com.motorola.launcher.secondarydisplay/com.motorola.launcher.secondarydisplay.SecondaryDisplayLauncher</string>
+    <string name="config_secondaryHomePackage_cli">com.motorola.launcher.secondarydisplay</string>
+    <string name="config_secondaryHomePackage_mobileUi">com.motorola.launcher3</string>
+    <string name="zz_moto_config_smallCliComponent">com.motorola.launcher.secondarydisplay/com.motorola.launcher.secondarydisplay.venus.SmallCliService</string>
 </resources>
